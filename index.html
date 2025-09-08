@@ -5,15 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>George Nyongesa - Software Developer</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
-        <!-- Header & Navigation -->
+        <!-- Header -->
         <header>
             <div class="container">
                 <nav>
-                    <div class="logo">
-                        George Nyongesa
-                    </div>
+                    <div class="logo">George<span>.</span></div>
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -21,7 +20,7 @@
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#download-cv">Download CV</a></li>
+                        <li><a href="#" class="btn">Download CV</a></li>
                     </ul>
                     <div class="menu-btn">☰</div>
                 </nav>
@@ -29,18 +28,25 @@
         </header>
 
         <!-- Hero Section -->
-        <section id="home" class="hero">
+        <section class="hero" id="home">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            
             <div class="container">
-                <h1>Hi I'm <span>George Nyongesa</span></h1>
-                <p>A Software Developer | Full Stack Engineer</p>
-                <p>
-                    Building clean, maintainable solutions with code. 
-                    Passionate about creating exceptional digital experiences and 
-                    full-stack applications that solve real-world problems.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn">Download Resume</a>
-                    <a href="#projects" class="btn btn-outline">View Projects</a>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hi, I'm <span>George Nyongesa</span></h1>
+                        <p>Software Developer | Full-Stack Engineer</p>
+                        <p>Building clean, maintainable solutions with code. Passionate about creating exceptional digital experiences and full-stack applications that solve real-world problems.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn">Download Resume</a>
+                            <a href="#projects" class="btn btn-outline">View My Work</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="/images/george.jpg" alt="George Nyongesa">
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,17 +60,17 @@
                         <p>Enthusiastic Software Developer with hands-on experience in full-stack web development, skilled in modern technologies and passionate about building clean, maintainable solutions.</p>
                         
                         <h3>My Journey</h3>
-                        <p>Enthusiastic Software Developer with hands-on experience in full-stack web development. Currently pursuing a Bachelor of Science in Computer Science at The Catholic University of Eastern Africa, Munich.</p>
-                        <p>Skilled in JavaScript (React), Python (Flask), and database management with MySQL/MongoDB. I have a strong understanding of clean code practices and client-focused development.</p>
-                        <p>I believe in building scalable, maintainable solutions and staying current with emerging technologies to deliver exceptional user experiences.</p>
+                        <p>Started my journey in computer science at The Catholic University of Eastern Africa, where I discovered my passion for creating digital solutions that solve real-world problems.</p>
+                        <p>Over the years, I've worked with various organizations, developing full-stack applications and providing technical solutions.</p>
+                        <p>I believe in writing clean, maintainable code and staying up-to-date with the latest technologies and best practices.</p>
                         
                         <h3>What I Love</h3>
                         <ul>
-                            <li>Building responsive, user-friendly applications</li>
-                            <li>Full-stack development with modern frameworks</li>
-                            <li>Database design and optimization</li>
-                            <li>Learning emerging technologies</li>
+                            <li>Building user-centric applications</li>
+                            <li>Solving complex technical challenges</li>
+                            <li>Learning new technologies</li>
                             <li>Creating maintainable, scalable code</li>
+                            <li>Mentoring and knowledge sharing</li>
                         </ul>
                     </div>
                     
@@ -85,7 +91,7 @@
                         </div>
                         
                         <div class="skill-category">
-                            <h4>Frameworks</h4>
+                            <h4>Frameworks & Libraries</h4>
                             <div class="skills-grid">
                                 <span class="skill-item">React</span>
                                 <span class="skill-item">Next.js</span>
@@ -135,13 +141,18 @@
                 
                 <div class="project-grid">
                     <div class="card project-card">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboards.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Stripe</span>
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                            
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboards.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
                         </div>
                         <div class="project-links">
                             <a href="#" class="btn">Code</a>
@@ -150,13 +161,18 @@
                     </div>
                     
                     <div class="card project-card">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management application built with Next.js and Supabase. Real-time updates, team collaboration, and project tracking.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">Supabase</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Tailwind CSS</span>
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                            
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A collaborative task management application built with Next.js and Supabase. Real-time updates, team collaboration, and project tracking.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
                         </div>
                         <div class="project-links">
                             <a href="#" class="btn">Code</a>
@@ -165,13 +181,18 @@
                     </div>
                     
                     <div class="card project-card">
-                        <h3>AI Content Generator</h3>
-                        <p>An AI-powered content generation tool using OpenAI APIs. Features include text generation, image creation, and content optimization.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">OpenAI API</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1589254066213-a0c9dc853511?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                            
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Content Generator</h3>
+                            <p>An AI-powered content generation tool using OpenAI APIs. Features include text generation, image creation, and content optimization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                            </div>
                         </div>
                         <div class="project-links">
                             <a href="#" class="btn">Code</a>
@@ -183,33 +204,47 @@
                 <h3 style="margin-top: 50px;">Other Notable Projects</h3>
                 <div class="project-grid">
                     <div class="card project-card">
-                        <h3>Real-time Chat App</h3>
-                        <p>A modern chat application with real-time messaging, file sharing and video calls. Built with Socket.io and WebRTC.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Socket.io</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">WebRTC</span>
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                            
+                        </div>
+                        <div class="project-content">
+                            <h3>Real-time Chat App</h3>
+                            <p>A modern chat application with real-time messaging, file sharing and video calls. Built with Socket.io and WebRTC.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">WebRTC</span>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="card project-card">
-                        <h3>Portfolio Analytics</h3>
-                        <p>A comprehensive analytics dashboard for portfolio tracking with interactive charts and real-time data visualization.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">MongoDB</span>
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                            
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Analytics</h3>
+                            <p>A comprehensive analytics dashboard for portfolio tracking with interactive charts and real-time data visualization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="card project-card">
-                        <h3>Mobile Fitness App</h3>
-                        <p>A cross-platform fitness tracking app with workout plans, progress tracking, and social features for fitness enthusiasts.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Redux</span>
+                        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                        </div>
+                        <div class="project-content">
+                            <h3>Mobile Fitness App</h3>
+                            <p>A cross-platform fitness tracking app with workout plans, progress tracking, and social features for fitness enthusiasts.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -220,20 +255,26 @@
         <section id="experience">
             <div class="container">
                 <h2>Work Experience</h2>
-                <p>My journey in software development, from internships to senior roles, building impactful solutions and leading teams.</p>
+                <p>My journey in software development, from internships to various roles, building impactful solutions.</p>
                 
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content card">
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="experience-details">
                             <h3>Freelance Web Developer</h3>
-                            <div class="timeline-date">2023 - Present | Nairobi, Kenya</div>
-                            <ul>
-                                <li>Built responsive business websites for various clients using modern frameworks</li>
-                                <li>Developed full-stack applications with Flask and Next.js</li>
-                                <li>Managed SQL and NoSQL databases for web applications</li>
-                                <li>Delivered custom solutions tailored to client requirements</li>
-                            </ul>
-                            <div class="project-tech" style="margin-top: 15px;">
+                            <div class="experience-company">Self-employed</div>
+                            <div class="experience-date">2023 - Present | Nairobi, Kenya</div>
+                            <div class="experience-description">
+                                <ul>
+                                    <li>Built responsive business websites for various clients using modern frameworks</li>
+                                    <li>Developed full-stack applications with Flask and Next.js</li>
+                                    <li>Managed SQL and NoSQL databases for web applications</li>
+                                    <li>Delivered custom solutions tailored to client requirements</li>
+                                </ul>
+                            </div>
+                            <div class="experience-tech">
                                 <span class="tech-tag">Next.js</span>
                                 <span class="tech-tag">Flask</span>
                                 <span class="tech-tag">MySQL</span>
@@ -244,17 +285,23 @@
                         </div>
                     </div>
                     
-                    <div class="timeline-item">
-                        <div class="timeline-content card">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="experience-details">
                             <h3>ICT Assistant</h3>
-                            <div class="timeline-date">May 2023 - Nov 2023 | Nairobi, Kenya</div>
-                            <ul>
-                                <li>Maintained computer systems and network infrastructure</li>
-                                <li>Provided technical support to staff and resolved IT issues</li>
-                                <li>Handled system backups and data management procedures</li>
-                                <li>Installed and configured network equipment and software</li>
-                            </ul>
-                            <div class="project-tech" style="margin-top: 15px;">
+                            <div class="experience-company">Tips Technologies</div>
+                            <div class="experience-date">May 2023 - Nov 2023 | Nairobi, Kenya</div>
+                            <div class="experience-description">
+                                <ul>
+                                    <li>Maintained computer systems and network infrastructure</li>
+                                    <li>Provided technical support to staff and resolved IT issues</li>
+                                    <li>Handled system backups and data management procedures</li>
+                                    <li>Installed and configured network equipment and software</li>
+                                </ul>
+                            </div>
+                            <div class="experience-tech">
                                 <span class="tech-tag">Windows</span>
                                 <span class="tech-tag">Linux</span>
                                 <span class="tech-tag">Network Administration</span>
@@ -263,17 +310,23 @@
                         </div>
                     </div>
                     
-                    <div class="timeline-item">
-                        <div class="timeline-content card">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="experience-details">
                             <h3>IT Intern</h3>
-                            <div class="timeline-date">May 2022 - Aug 2022 | Nairobi, Kenya</div>
-                            <ul>
-                                <li>Developed custom WordPress themes for departmental websites</li>
-                                <li>Repaired and maintained ICT equipment and hardware</li>
-                                <li>Supported LAN setup and network configuration</li>
-                                <li>Assisted in digital transformation initiatives</li>
-                            </ul>
-                            <div class="project-tech" style="margin-top: 15px;">
+                            <div class="experience-company">Ministry of Agriculture</div>
+                            <div class="experience-date">May 2022 - Aug 2022 | Nairobi, Kenya</div>
+                            <div class="experience-description">
+                                <ul>
+                                    <li>Developed custom WordPress themes for departmental websites</li>
+                                    <li>Repaired and maintained ICT equipment and hardware</li>
+                                    <li>Supported LAN setup and network configuration</li>
+                                    <li>Assisted in digital transformation initiatives</li>
+                                </ul>
+                            </div>
+                            <div class="experience-tech">
                                 <span class="tech-tag">WordPress</span>
                                 <span class="tech-tag">PHP</span>
                                 <span class="tech-tag">HTML</span>
@@ -283,17 +336,23 @@
                         </div>
                     </div>
                     
-                    <div class="timeline-item">
-                        <div class="timeline-content card">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="experience-details">
                             <h3>Data Analyst</h3>
-                            <div class="timeline-date">Mar 2021 - Apr 2022 | Nairobi, Kenya</div>
-                            <ul>
-                                <li>Analyzed large datasets to extract meaningful business insights</li>
-                                <li>Built interactive dashboards for data visualization</li>
-                                <li>Performed data quality checks and validation procedures</li>
-                                <li>Generated reports for management decision-making</li>
-                            </ul>
-                            <div class="project-tech" style="margin-top: 15px;">
+                            <div class="experience-company">Revenues Holding Ltd</div>
+                            <div class="experience-date">Mar 2021 - Apr 2022 | Nairobi, Kenya</div>
+                            <div class="experience-description">
+                                <ul>
+                                    <li>Analyzed large datasets to extract meaningful business insights</li>
+                                    <li>Built interactive dashboards for data visualization</li>
+                                    <li>Performed data quality checks and validation procedures</li>
+                                    <li>Generated reports for management decision-making</li>
+                                </ul>
+                            </div>
+                            <div class="experience-tech">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Excel</span>
                                 <span class="tech-tag">Data Analysis</span>
@@ -312,21 +371,23 @@
                 <h2>Education</h2>
                 <p>Academic foundation and continuous learning in computer science and software development.</p>
                 
-                <div class="card">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <div class="timeline-date">2021 - Oct 2025 (Expected) | Nairobi, Kenya</div>
-                    <p><strong>The Catholic University of Eastern Africa</strong></p>
-                    <ul>
-                        <li>Comprehensive study of computer science fundamentals and modern technologies</li>
-                        <li>Focus on software engineering, algorithms, and data structures</li>
-                        <li>Practical experience in full-stack web development</li>
-                        <li>Strong foundation in programming languages and database management</li>
-                    </ul>
-                    <p>Currently pursuing degree with excellent academic standing</p>
+                <div class="education-card">
+                    <div class="education-details">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <div class="education-institution">The Catholic University of Eastern Africa</div>
+                        <div class="education-date">Awarded in 2025 | Nairobi, Kenya</div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Comprehensive study of computer science fundamentals and modern technologies</li>
+                                <li>Focus on software engineering, algorithms, and data structures</li>
+                                <li>Practical experience in full-stack web development</li>
+                                <li>Strong foundation in programming languages and database management</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
 
         <!-- Contact Section -->
         <section id="contact">
@@ -334,39 +395,82 @@
                 <h2>Get In Touch</h2>
                 <p>Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.</p>
                 
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new opportunities, interesting projects, or just having a friendly chat about technology and development.</p>
                         
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>georgenyongesa254@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+254 799952841</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Nairobi, Kenya</p>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this about?">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
-
 
         <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="social-links">
-                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="#" aria-label="GitHub">GitHub</a>
-                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="https://www.linkedin.com/in/george-wepukhulu-6803131b1/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/George-Nyongesa" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/Frello254?t=pRdn1M4zuTt3wSRKMQ8GKQ&s=09" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
-                <p>&copy; 2023 George Nyongesa. All rights reserved.</p>
+                <p>&copy; 2025 George Nyongesa. All rights reserved.</p>
             </div>
         </footer>
 
