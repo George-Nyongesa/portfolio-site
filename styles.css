@@ -696,5 +696,7 @@
             .btn {
                 width: 100%;
                 max-width: 250px;
+                padding: 8px 16px;
+                font-size: 14px;
             }
         }
